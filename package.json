@@ -1,0 +1,16 @@
+{
+  "name": "you",
+  "version": "1.0.0",
+  "description": "your website",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^7.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
