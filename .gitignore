@@ -1,71 +1,21 @@
 *~
 .idea/
-.irbrc
-.ruby-gemset
-.vagrant/
-provisioning/vagrant.retry
-.yardoc/
 .eslintcache
-.raygun-release
-assets/javascripts/.package.json
-assets/javascripts/generated/**/*.js
-assets/less/generated/**/*.less
-capybara*.html
-config/settings_*.rb
-!config/settings_codeship.rb
-config/settings/*.rb
-!config/settings/codeship.rb
-!config/settings/load.rb
-!config/settings/settings.rb.example
-coverage/
-doc/
-dump.rdb
-legacy_json/
-log/*
 npm-debug.log
 .DS_Store
-.rake_tasks
-config/settings.rb
-spec/config/settings.rb
-public/attachments/
-public/fileupload/
-public/javascripts/stats-js.json
 tmp/*
 **/node_modules/*
-**/bower_components/*
 !node_modules/vydia
-public/javascripts/*.js
-public/javascripts/*.html
-public/javascripts/*.map
-public/stylesheets/*.css
-public/stylesheets/*.map
-public/stylesheets/sourcemaps/*.map
-public/**/__screenshots__/**/*.png*
-public/index.html
-public/stats-js.json
-**/*.swp
-.bundle/config
-.byebug_history
-webpack-assets.json
-webpack-assets-js.json
-webpack-assets-css.json
-db_schema.dump
-dw_schema.dump
 
-config/settings/redshift_config.yml
 .vscode/
 
-# chrome package added by vagrant provision sometimes
 google-chrome-stable_current_amd64.deb
 
-# yarn
 yarn-error.log
 package-lock.json
 npm-shrinkwrap.json
 
-# docker
 db_data/
 data/
 
-# next
 .next/
