@@ -4,7 +4,7 @@
   "description": "your website",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "docker-compose exec you-web sh -c \"node index.js\""
   },
   "author": "",
   "license": "ISC",

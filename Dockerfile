@@ -62,6 +62,7 @@ RUN apt-get install neo4j-client libneo4j-client-dev -y
 RUN wget https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-x64.tar.xz
 RUN tar -xf node-v8.12.0-linux-x64.tar.xz --directory /usr/local --strip-components 1
 # need gulp to generate assets
+RUN npm -v
 RUN npm install -g gulp@4.x
 RUN npm install -g now@11.4.5
 
