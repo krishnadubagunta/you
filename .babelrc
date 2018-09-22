@@ -7,7 +7,7 @@
     },
     "production": {
       "presets": [
-        "next/babel",
+        "next/babel"
       ]
     },
     "test": {
