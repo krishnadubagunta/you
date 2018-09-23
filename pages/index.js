@@ -1,3 +1,4 @@
+import React from 'react'
 import NavbarContainer from '../components/NavbarContainer'
 import Title from '../components/Typography/Title'
 

@@ -2,7 +2,19 @@
   "env": {
     "development": {
       "presets": [
-        "next/babel"
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ],
+        "stage-1",
+        "react"
+      ],
+      "plugins": [
+        "lodash",
+        "transform-runtime",
+        "react-hot-loader/babel"
       ]
     },
     "production": {
@@ -14,8 +26,14 @@
       "presets": [
         [
           "env",
-          "react"
-        ]
+          {
+            "modules": false
+          }
+        ],
+        "react",
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
       ]
     }
   },
