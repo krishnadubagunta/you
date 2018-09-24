@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With Snapshot Testing App shows "Hello world!" 1`] = `
-<nav
-  className="sc-bdVaJa iWZHCN"
->
-  <h1
-    className="sc-bwzfXH gxBMIz"
-  >
-    Title
-  </h1>
-</nav>
-`;
-
 exports[`With Snapshot Testing App shows "Title" 1`] = `
 <nav
   className="sc-bdVaJa iWZHCN"

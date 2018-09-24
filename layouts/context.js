@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { DEFAULT_LAYOUT } from "../constants/defaults"
+import LayoutSelector from './layouts'
 
 const LayoutSharedContext = React.createContext()
 
@@ -17,14 +18,18 @@ export class LayoutProvider extends Component {
     })
   }
 
-  resetLayout = () => {
-    this.setState({
-      layoutId: DEFAULT_LAYOUT
-    })
-  }
-
   render() {
+    const { children } = this.props
+    const { layoutId } = this.state
 
+    return (
+      <LayoutSharedContext.Provider value={{ layoutId }}>
+        <LayoutSelector />
+        {children}
+      </LayoutSharedContext.Provider>
+    )
   }
 
 }
+
+export const LayoutConsumer = LayoutSharedContext.Consumer
