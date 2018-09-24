@@ -10,11 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "classnames": "^2.2.6",
-=======
     "lodash": "^4.17.11",
->>>>>>> 2c0da73a6ffb6499d75e0963c2a36dad4a5c4e7c
     "next": "^7.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
