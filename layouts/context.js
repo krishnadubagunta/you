@@ -23,4 +23,8 @@ export class LayoutProvider extends Component {
     })
   }
 
+  render() {
+
+  }
+
 }
