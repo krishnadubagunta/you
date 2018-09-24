@@ -2,19 +2,7 @@
   "env": {
     "development": {
       "presets": [
-        [
-          "es2015",
-          {
-            "modules": false
-          }
-        ],
-        "stage-1",
-        "react"
-      ],
-      "plugins": [
-        "lodash",
-        "transform-runtime",
-        "react-hot-loader/babel"
+        "next/babel"
       ]
     },
     "production": {
@@ -25,26 +13,14 @@
     "test": {
       "presets": [
         [
-          "env",
+          "next/babel",
           {
-            "modules": false
+            "preset-env": {
+              "modules": "commonjs"
+            }
           }
-        ],
-        "react",
-      ],
-      "plugins": [
-        "transform-es2015-modules-commonjs",
+        ]
       ]
     }
-  },
-  "plugins": [
-    [
-      "babel-plugin-styled-components",
-      {
-        "ssr": true,
-        "displayName": true,
-        "preprocess": false
-      }
-    ]
-  ]
+  }
 }
