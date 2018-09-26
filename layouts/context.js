@@ -8,7 +8,7 @@ export class LayoutProvider extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      layoutId: DEFAULT_LAYOUT
+      layoutId: DEFAULT_LAYOUT,
     }
   }
 
@@ -19,17 +19,16 @@ export class LayoutProvider extends Component {
   }
 
   render() {
-    const { children } = this.props
     const { layoutId } = this.state
-
     return (
-      <LayoutSharedContext.Provider value={{ layoutId }}>
-        <LayoutSelector />
-        {children}
+      <LayoutSharedContext.Provider value={{ layoutId, selectLayout: this.selectLayout }}>
+        {
+          this.props.children
+        }
       </LayoutSharedContext.Provider>
     )
   }
 
 }
 
-export const LayoutConsumer = LayoutSharedContext.Consumer
+export const LayoutConsumer = LayoutSharedContext.Consumer 
