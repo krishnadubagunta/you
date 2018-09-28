@@ -3,24 +3,22 @@ import { map } from "lodash"
 import { LayoutConsumer } from "./context"
 
 const Layout = () => (
-  <div>
     <LayoutConsumer>
-      {({ selectLayout }) => (
-        <div>
-          {map([1, 2, 3, 4], id => (
-            <button key={id} onClick={() => selectLayout(id)}>`Layout ${id}`</button>
-          ))}
-        </div>
-      )}
-      <style jsx>{
-        `
+      {(props) => {
+        console.log(props)
+        return (
+          <div>
+        {map([1, 2, 3, 4], id => (<button key={id} onClick={() => props.selectLayout(id)}>{`Layout ${id}`}</button>))}
+        <style jsx>{`
        div {
         position: absolute;
     }
   `}
-      </style>
+        </style>
+      </div>
+        )
+      }}
     </LayoutConsumer>
-  </div>
 )
 
 export default Layout

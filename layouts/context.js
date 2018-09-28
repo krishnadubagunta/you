@@ -22,6 +22,7 @@ export class LayoutProvider extends Component {
     const { layoutId } = this.state
     return (
       <LayoutSharedContext.Provider value={{ layoutId, selectLayout: this.selectLayout }}>
+        <LayoutSelector />
         {
           this.props.children
         }
@@ -31,4 +32,4 @@ export class LayoutProvider extends Component {
 
 }
 
-export const LayoutConsumer = LayoutSharedContext.Consumer 
+export const LayoutConsumer = LayoutSharedContext.Consumer
