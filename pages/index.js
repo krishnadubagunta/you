@@ -3,12 +3,15 @@ import NavbarContainer from '../components/NavbarContainer'
 import Title from '../components/Typography/Title'
 import Layout from '../layouts'
 import { dev } from '../constants/settings'
+import { LayoutConsumer } from '../layouts/context';
 
 const Index = () => (
   <Fragment>
     <Layout />
     <NavbarContainer>
-      <Title>Title</Title>
+      <LayoutConsumer>
+        {({layoutId}) => (<Title>{`Title ${layoutId} `}</Title>)}
+      </LayoutConsumer>
     </NavbarContainer>
   </Fragment>
 )
